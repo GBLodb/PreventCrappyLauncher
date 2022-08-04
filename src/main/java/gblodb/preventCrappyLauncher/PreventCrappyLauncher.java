@@ -8,7 +8,8 @@ import net.minecraft.launchwrapper.LaunchClassLoader;
 public class PreventCrappyLauncher implements ITweaker {
     @Override
     public void acceptOptions(List<String> args, File gameDir, File assetsDir, String profile) throws CrappyLauncherError {
-        if (args.contains("PCL2") || args.contains("PCL")) {
+        File pclDir = new File(gameDir.getPath() + "\\PCL");
+        if (pclDir.exists()) {
             throw new CrappyLauncherError("You're using an unsupported launcher.");
         }
     }
