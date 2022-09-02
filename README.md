@@ -1,4 +1,7 @@
-# PreventCrappyLauncher
+<div align="center">
+    <img src="https://raw.githubusercontent.com/GBLodb/PreventCrappyLauncher/retro/icon.png" width="120px">
+    <h3 align="center">Prevent Crappy Launcher</h3>
+</div>
 
 A mod, a mod whose use you know by heart.
 
