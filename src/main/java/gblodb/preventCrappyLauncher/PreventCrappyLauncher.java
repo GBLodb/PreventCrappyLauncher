@@ -14,7 +14,7 @@ public class PreventCrappyLauncher implements ITweaker {
 
         try {
             String line;
-            String cmd = System.getenv("windir") + "\\system32\\" + "tasklist.exe" + " /FO csv /FI \"WINDOWTITLE eq Plain Craft Launcher 2\u3000\"";
+            String cmd = System.getenv("windir") + "\\system32\\" + "tasklist.exe" + " /FO csv /FI \"WINDOWTITLE eq Plain Craft Launcher*\"";
             Process pr = new ProcessBuilder(cmd).start();
             SequenceInputStream sis = new SequenceInputStream(pr.getInputStream(), pr.getErrorStream());
             InputStreamReader inst = new InputStreamReader(sis);
